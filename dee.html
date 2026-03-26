@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khadijah cakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/lolo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a5c0adc412.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <div class="nav">
+        <div class="left-nav">
+            <div class="logo">
+                <img src="image/lolo.png" alt="logo image">
+                <!-- <h2>KHADIJA CAKE </h2>   -->
+            </div>
+        </div>
+        <!-- hamburger menu -->
+       <input type="checkbox" id="menu-toggle" class="menu-toggle">
+       <label for="menu-toggle" class="hamburger">
+        <span></span>
+       </label>
+
+         <div class="nav-search">
+            <form action="" method="post">
+                <input type="search" name="search" id="input" placeholder="Search for cakes, pastries, and more...">
+                <button type="submit" id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <a href="#cart-page"><button id="cart-btn" ><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></button></a>
+        </div>
+    
+        <div class="right-nav">
+           
+            <div>
+            <a href="#head">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#order"><button class="button" href="#order">Order Online </button></a>
+            </div>
+            
+
+          
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="head" id="head">
+        <div class="h-left">
+            <h2>Taste the Difference <span> <sub>@</sub> </span></h2>
+            <h1>Khadijah Cakes & Confectionaries</h1>  
+            <p>From elegant cakes to delicious meals, we offer a complete culinary experience. Cakes, shawarma, pizza, pastries, and more—all crafted with quality and care to delight your taste buds.</p>
+            
+            <a href="#order"><button class="button">
+            Order Now <i class="fa-solid fa-download"></i></a>
+           
+            </button>
+        </div>
+        <div class="h-image">
+            <img src="image/h ing.png" alt="Cake Image.">
+
+        </div>
+    </div>
+   
+    <!-- MENU  -->
+    
+    <div class="offer" id="menu">
+        <div class="heading">
+            <h3 id="sto">Our Menu:</h3>
+        </div>
+        <div class="con" id="menu-items">
+            <div class="cake-cntent" data-item="cake" data-price="27499.99">
+            <div class="cake-img">
+                <img src="image/h ing.png" alt="cake image">
+            </div>
+            <div class="cake-desc">
+                <h3>Cakes</h3>
+                <p>Our cakes are made with the finest ingredients, ensuring a delectable experience in every bite. From classic flavors to innovative creations, our menu offers a wide variety of options to satisfy every palate. 
+                    <b style="color: rgb(255, 132, 0);">Size:</b> 12 inches.
+                    <b style="color: rgb(255, 132, 0);">Layer:</b> 1 layer. </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦27,499.99 </p>
+                    <button class="cart-btn" data-item="cake"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cake-cntent" data-item="shawarma" data-price="4999.99">
+            <div class="cake-img">
+                <img src="image/shawarma .png" alt="Shawama image">
+            </div>
+            <div class="cake-desc">
+                <h3>Shawarma</h3>
+                <p>Indulge in our flavorful shawarma, expertly seasoned and wrapped in soft pita bread. Made with tender meat, fresh vegetables extra sausage, and our signature sauces, each bite delivers a perfect blend of spices and textures.
+                    <b style="color: rgb(255, 132, 0);">Sausage:</b> 2 units.
+                </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦4,999.99 </p>
+                    <button class="cart-btn" data-item="shawarma"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="pizza" data-price="8999.99">
+            <div class="cake-img">
+                <img src="image/pizza.png" alt="Pizza image">
+            </div>
+            <div class="cake-desc">
+                <h3>Pizza</h3>
+                <p>Savor our handcrafted pizzas with crispy crusts, rich tomato sauce, and premium toppings. Whether you prefer classic Margherita or adventurous combinations, our pizzas are baked to perfection for an irresistible meal.
+                    <b style="color: rgb(255, 132, 0);">Size:</b> Medium.
+                </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦8,999.99 </p>
+                    <button class="cart-btn" data-item="pizza"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="small chops" data-price="14999.99">
+            <div class="cake-img">
+                <img src="image/smallc.png" alt="Small Chops image">
+            </div>
+            <div class="cake-desc">
+                <h3>Small Chops</h3>
+                <p>Enjoy our assortment of small chops, including samosas, spring rolls, and meatballs. Perfectly seasoned and fried to golden perfection, these bite-sized delights are ideal for sharing or as appetizers.
+                    <b style="color: rgb(255, 132, 0);">Box-Size:</b> 8.
+                </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦14,999.99 </p>
+                    <button class="cart-btn" data-item="small chops"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="chicken-barbeque" data-price="29999.99">
+            <div class="cake-img">
+                <img src="image/chicken bbq.png" alt="Barbeque image">
+            </div>
+            <div class="cake-desc">
+                <h3>Chicken Barbeque</h3>
+                <p>Savor our succulent Chicken barbeque, marinated and grilled to smoky perfection. Tender chicken pieces and skewers infused with bold flavors that satisfy your cravings.
+                        <b style="color: rgb(255, 132, 0);">Size:</b> 1 whole chicken.
+                        <b style="color: rgb(255, 132, 0);">Sauces:</b> 1.
+                </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦29,999.99 </p>
+                    <button class="cart-btn" data-item="chicken-barbeque"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="fish-barbeque" data-price="24999.99">
+            <div class="cake-img">
+                <img src="image/fishbarbeque.png" alt="Barbeque image">
+            </div>
+            <div class="cake-desc">
+                <h3>Fish Barbeque</h3>
+                <p>Enjoy our premium Fish barbeque, featuring fresh fish grilled to perfection with aromatic herbs. Each piece delivers delightful flavors showcasing quality seafood at its finest.
+                    <b style="color: rgb(255, 132, 0);">Size:</b> large Combo.
+                    <b style="color: rgb(255, 132, 0);">Sauces:</b> 1.
+                </p>
+                <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦24,999.99 </p>
+                    <button class="cart-btn" data-item="fish-barbeque"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="chicken and chips" data-price="9999.99">
+            <div class="cake-img">
+                <img src="image/chick-chips.png" alt="Chicken & Chips image">
+            </div>
+            <div class="cake-desc">
+                <h3>Chicken and Chips</h3>
+                <p>Delight in our crispy fried chicken paired with golden fries. Seasoned with spices, this classic combination offers  tender chicken and perfectly cooked chips for a comforting meal. <b style="color: rgb(255, 132, 0);">Box-Size:</b> 8. includes 2 chicken with chips.</p>
+            <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦9,999.99</p>
+                    <button class="cart-btn" data-item="chicken and chips"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="pastries" data-price="9999.99">
+            <div class="cake-img">
+                <img src="image/pastries.png" alt="pastries image">
+            </div>
+            <div class="cake-desc">
+                <h3>Pastries</h3>
+                <p>Enjoy our delectable pastries, including chin-chin, puff-puff, sausage rolls, and meat pies. Perfectly seasoned and fried to golden perfection, these bite-sized treats are ideal for sharing or as appetizers. <b style="color: rgb(255, 132, 0);"> Box-Size:</b> 8.</p>
+            <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦9,999.99</p>
+                    <button class="cart-btn" data-item="pastries"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="cake-cntent" data-item="Cookies" data-price="2999.99">
+            <div class="cake-img">
+                <img src="image/cookies (2).png" alt="Cookies image">
+            </div>
+            <div class="cake-desc">
+                <h3>Cookies</h3>
+                <p>Delight in our handcrafted cookies, baked with love and premium ingredients. Each cookie offers a perfect balance of crunch and chewiness. Perfect for gifting or enjoying yourself in a sweet moment of bliss. <b style="color: rgb(255, 132, 0);">Box-Size:</b> 8.</p>
+            <select name="quantity" class="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <div class="carts">
+                    <p class="pri">₦2,999.99</p>
+                    <button class="cart-btn" data-item="Cookies"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+
+    </div>
+
+    <!-- See More Button for Mobile -->
+    <div class="see-more-container" id="see-more-container" style="display:none;">
+        <button class="button see-more-btn" id="see-more-btn" onclick="toggleShowMore()">See More Items</button>
+    </div>
+
+    <div class="about" id="about">
+            <div class="heading">
+                <h3 id="sto">ABOUT US:</h3>
+            </div>
+
+            <div class="about-con">
+               
+                <div class="about-desc">
+                    <!-- <h3></h3> -->
+                    <p>At Khadijah Cakes & Confectionaries, we are passionate about creating delicious and visually stunning cakes that bring joy to every occasion. With a commitment to quality and creativity, we use only the finest ingredients to craft our delectable treats. Whether you're celebrating a birthday, wedding, or any special event, our cakes are designed to make your moments unforgettable. We take pride in our attention to detail and dedication to customer satisfaction, ensuring that every bite is a delightful experience.</p>
+             
+                </div> 
+
+                <div class="about-img">
+                    <img src="image/khadejah.png" alt="About image">
+                </div>
+             </div>
+        </div>
+
+        <div class="map-form" id="order">
+            
+            <div class="heading">
+                <h3 id="sto">Order Now</h3>
+            </div>
+
+            <div class="all">
+                 <div class="form-container">
+            <form class="form" id="order-form">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required="">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required="">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required="">
+                </div>
+                <div class="form-group" id="cart-summary-form">
+                    <h4>Your Cart Items</h4>
+                    <div id="cart-items-form" style="max-height: 200px; overflow-y: auto; margin-bottom: 10px;">
+                        <p style="color: #999;">No items in cart</p>
+                    </div>
+                    <p style="font-weight: bold; color: rgb(255, 132, 0);">Total: ₦<span id="total-form">0.00</span></p>
+                </div>
+                <div class="form-group">
+                <label for="textarea">Additional Notes (Optional)</label>
+                <textarea name="textarea" id="textarea" rows="5" cols="50"></textarea>
+                </div>
+                <button type="submit" class="button"> Submit Order </button>
+            </form>
+        </div>
+        
+        <div class="map">
+           <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=blessed%20impact%20college&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">Sprunki</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:66.66666666666666%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
+        </div>
+            </div>
+       
+        
+    </div>
+
+    <!-- CART PAGE -->
+    <div class="cart-page" id="cart-page">
+        <div class="heading">
+            <h3 id="sto">Your Shopping Cart</h3>
+        </div>
+        
+        <div class="cart-container">
+            <div class="cart-items-section">
+                <div id="cart-items-display">
+                    <p style="text-align: center; color: #999; padding: 40px;">Your cart is empty</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section">
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>₦<span id="subtotal-display">0.00</span></span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Number of Items:</span>
+                        <span id="items-count-display">0</span>
+                    </div>
+                    <div class="summary-row-total">
+                        <span>Total:</span>
+                        <span class="total-price">₦<span id="total-display">0.00</span></span>
+                    </div>
+                    <button id="checkout-btn" class="button" style="width: 100%; margin-top: 20px;">Proceed to Checkout</button>
+                    <button id="continue-shopping-btn" class="button" style="width: 100%; margin-top: 10px; background-color: #999; border-color: #999;">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REFUND POLICY MODAL -->
+    <div id="refund-policy-modal" class="policy-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('refund-policy-modal')">&times;</span>
+            <h2>Refund Policy</h2>
+            <div class="policy-body">
+                <h3>Return & Refund Guidelines</h3>
+                <p>At Khadijah Cakes & Confectionaries, we stand behind the quality of our products. Please review our refund policy below:</p>
+                
+                <h4>Eligibility for Refunds (Due to the perishable nature of our products)</h4>
+                <ul>
+                    <li>Refund requests must be submitted within 24 hours of purchase or delivery</li>
+                    <li> Items found to be defective or damaged at the time of delivery or pickup.</li>
+                    <li>Proof of purchase (order confirmation) is required</li>
+                </ul>
+
+                <h4>Non-Refundable Items</h4>
+                <ul>
+                    <li>Custom-made cakes and personalized orders</li>
+                    <li>Change of mind after the order has been prepared.</li>
+                    <li>Damage occurred after the item has left our premises (for pickups).</li>
+                    <li>Already consumed or partially consumed items</li>
+                    <li>Incorrect storage or handling by the customer.</li>
+                </ul>
+
+                <h4>Refund Process</h4>
+                <ol>
+                    <li>Contact us via phone or email with your order details</li>
+                    <li>Provide photos of the product if applicable</li>
+                    <li>Our team will review and approve/decline within 48 hours</li>
+                    <li>Approved refunds will be processed within 5-7 business days</li>
+                </ol>
+
+                <h4>How to Contact Us</h4>
+                <p><b>Phone:</b> +234 9067 949 416</p>
+                <p><b>Email:</b> khadijatraji403@gmail.com</p>
+
+                <p style="margin-top: 20px; font-style: italic; color: #666;">If you have any questions about our refund policy, please don't hesitate to contact us.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELIVERY POLICY MODAL -->
+    <div id="delivery-policy-modal" class="policy-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('delivery-policy-modal')">&times;</span>
+            <h2>Delivery Policy</h2>
+            <div class="policy-body">
+                <h3>Delivery Information & Terms</h3>
+                <p>We deliver fresh, delicious orders right to your doorstep. Here's what you need to know about our delivery service:</p>
+                
+                <h4>Delivery Areas</h4>
+                <ul>
+                    <li>Ikorodu and surrounding areas in Lagos</li>
+                    <li>Standard delivery within our service radius</li>
+                    <li>Special arrangements available for far locations</li>
+                </ul>
+
+                <h4>Delivery Times</h4>
+                <ul>
+                    <li><b>Standard Delivery:</b> 2-3 business days (Orders placed Mon-Fri, 10am-7pm)</li>
+                    <li><b>Same-Day Delivery:</b> Available for orders placed before 12:00 PM (Additional charges may apply)</li>
+                    <li><b>Weekend Deliveries:</b> Available upon request</li>
+                </ul>
+
+                <h4>Delivery Charges</h4>
+                <ul>
+                    <li>Free delivery for orders above ₦100,000</li>
+                    <li>Flat rate of ₦2,500 for orders below ₦80,000</li>
+                    <li>Same-day rush delivery: Additional ₦1,500</li>
+                </ul>
+
+                <h4>Product Handling & Care</h4>
+                <ul>
+                    <li>All items are properly packaged to ensure freshness</li>
+                    <li>Cakes are delivered in insulated containers</li>
+                    <li>Refrigerable items should be stored properly upon receipt</li>
+                </ul>
+
+                <h4>What to Do Upon Delivery</h4>
+                <ol>
+                    <li>Inspect your order immediately upon receipt</li>
+                    <li>Report any damages or discrepancies within 1 hour</li>
+                    <li>Keep your receipt for warranty/replacement claims</li>
+                </ol>
+
+                <h4>Special Orders & Events</h4>
+                <p>For large orders or special event catering, please contact us directly at least 3 days in advance for personalized delivery arrangements.</p>
+
+                <h4>Contact Us for Deliveries</h4>
+                <p><b>Phone:</b> +234 9067 949 416</p>
+                <p><b>Email:</b> khadijatraji403@gmail.com</p>
+                <p><b>WhatsApp:</b> +234 9067 949 416</p>
+
+                <p style="margin-top: 20px; font-style: italic; color: #666;">Thank you for choosing Khadijah Cakes & Confectionaries for your orders!</p>
+            </div>
+        </div>
+    </div>
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                
+                <h3>khadijah CAKES</h3>
+                <div class="f-img">
+                    <img src="image/footer logo.png" alt="">
+                </div>
+                <p>Where sophisticated design meets  soulful flavor. We specialize in creating breathtaking centerpieces that taste even better than they look.</p>
+                
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><b style="color: rgb(255, 132, 0);">Phone:</b>   +234 9067 949 416</p>
+                <p><b style="color: rgb(255, 132, 0);">Email:</b>  khadijatraji403@gmail.com</p>
+                <p><b style="color: rgb(255, 132, 0);">Address:</b>  28, Freedom Close, Adamo, Ikorodu, Lagos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cart-page">Cart</a></li>
+                    <li><a href="#order">Order Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="openModal('refund-policy-modal')">Refund Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openModal('delivery-policy-modal')">Delivery Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Everyday</p>
+                <p>10:00am - 7:00pm</p>
+                <a href="#order"><button class="button">Place Your Order</button></a>
+                <div class="socials">
+                    <a href="https://wa.link/ak3nr7"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/oluwafumilayo.khadija?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/deejah454?igsh=em1rZW92b2pnYnVi"><i class="fa-brands fa-instagram"></i></a>
+                   
+                    <a href="https://www.tiktok.com/@deejah403?_r=1&amp;_t=ZS-94lH7cWRoVF"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Khadijah Cakes & Confectionaries. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#head" class="back-to-top fixed" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
