@@ -10,8 +10,8 @@ const cartNavBtn = document.getElementById('cart-btn');
 const orderForm = document.getElementById('order-form');
 
 // Business contact details
-const BUSINESS_PHONE = '+234 9067 949 416';
 const BUSINESS_EMAIL = 'khadijatraji403@gmail.com';
+const BUSINESS_PHONE = '+234 9067 949 416';
 
 // Format price with commas for readability (e.g., 1000.00 becomes 1,000.00)
 function formatPrice(price) {
@@ -359,11 +359,25 @@ orderForm.addEventListener('submit', (e) => {
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
     const email = document.getElementById('email').value.trim();
-    const memail = "khadijatraji403@gmail.com";
     const notes = document.getElementById('textarea').value.trim();
 
+    // Validation
     if (!name || !phone || !email) {
         showNotification('Please fill in all required fields.', 'error');
+        return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showNotification('Please enter a valid email address.', 'error');
+        return;
+    }
+
+    // Basic phone validation (at least 10 digits)
+    const phoneDigitsOnly = phone.replace(/\D/g, '');
+    if (phoneDigitsOnly.length < 10) {
+        showNotification('Please enter a valid phone number.', 'error');
         return;
     }
 
@@ -374,7 +388,7 @@ orderForm.addEventListener('submit', (e) => {
     sendToWhatsApp(orderMessage);
 
     // Send to Email (automatically open email client)
-    sendToEmail(orderMessage, memail);
+    sendToEmail(orderMessage, BUSINESS_EMAIL);
 
     // Clear form
     orderForm.reset();
@@ -413,8 +427,21 @@ function generateOrderMessage(name, phone, email, notes) {
     return message;
 }
 
+// Format phone number for WhatsApp API
+function formatPhoneForWhatsApp(phone) {
+    // Extract only digits
+    const digitsOnly = phone.replace(/\D/g, '');
+    
+    if (digitsOnly.startsWith('0')) {
+        return '234' + digitsOnly.slice(1);
+    }
+    
+    return digitsOnly;
+}
+
 function sendToWhatsApp(message) {
-    const whatsappApiUrl = `https://wa.me/${BUSINESS_PHONE.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+    const formattedPhone = formatPhoneForWhatsApp(BUSINESS_PHONE);
+    const whatsappApiUrl = `https://wa.me/${formattedPhone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappApiUrl, '_blank');
 }
 
@@ -432,7 +459,6 @@ function sendToEmail(message, email) {
     a.href = emailLink;
     a.click();
 }
-
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     const bgColor = type === 'success' ? 'rgb(40, 167, 69)' : type === 'error' ? '#ff4444' : 'rgb(255, 132, 0)';
@@ -526,3 +552,31 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// PAGE LOADER - Hide loader when page fully loads
+window.addEventListener('load', () => {
+    const pageLoader = document.getElementById('page-loader');
+    if (pageLoader) {
+        // Add hidden class to fade out the loader
+        pageLoader.classList.add('hidden');
+        
+        // Optionally remove from DOM after animation completes
+        setTimeout(() => {
+            pageLoader.style.display = 'none';
+        }, 600);
+    }
+});
+
+// Hide loader on DOMContentLoaded as fallback for faster pages
+document.addEventListener('DOMContentLoaded', () => {
+    const pageLoader = document.getElementById('page-loader');
+    if (pageLoader) {
+        // Set a minimum display time for better UX (2 seconds)
+        setTimeout(() => {
+            pageLoader.classList.add('hidden');
+            setTimeout(() => {
+                pageLoader.style.display = 'none';
+            }, 600);
+        }, 2000);
+    }
+});

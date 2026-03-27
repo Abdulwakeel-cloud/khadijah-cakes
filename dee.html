@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#261304">
     <title>khadijah cakes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="image/lolo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/lolo.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a5c0adc412.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- PAGE LOADER -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-container">
+            <div class="spinner"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
     <!-- NAV BAR -->
     <div class="nav">
         <div class="left-nav">
             <div class="logo">
-                <img src="image/lolo.png" alt="logo image">
+                <img src="image/lolo.webp" alt="logo image">
                 <!-- <h2>KHADIJA CAKE </h2>   -->
             </div>
         </div>
@@ -61,7 +70,7 @@
             </button>
         </div>
         <div class="h-image">
-            <img src="image/h ing.png" alt="Cake Image.">
+            <img src="image/h ing.webp" alt="Cake Image.">
 
         </div>
     </div>
@@ -75,7 +84,7 @@
         <div class="con" id="menu-items">
             <div class="cake-cntent" data-item="cake" data-price="27499.99">
             <div class="cake-img">
-                <img src="image/h ing.png" alt="cake image">
+                <img src="image/h ing.webp" alt="cake image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Cakes</h3>
@@ -102,7 +111,7 @@
 
         <div class="cake-cntent" data-item="shawarma" data-price="4999.99">
             <div class="cake-img">
-                <img src="image/shawarma .png" alt="Shawama image">
+                <img src="image/shawarma.webp" alt="Shawama image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Shawarma</h3>
@@ -128,7 +137,7 @@
         </div>
         <div class="cake-cntent" data-item="pizza" data-price="8999.99">
             <div class="cake-img">
-                <img src="image/pizza.png" alt="Pizza image">
+                <img src="image/pizza.webp" alt="Pizza image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Pizza</h3>
@@ -154,7 +163,7 @@
         </div>
         <div class="cake-cntent" data-item="small chops" data-price="14999.99">
             <div class="cake-img">
-                <img src="image/smallc.png" alt="Small Chops image">
+                <img src="image/smallc.webp" alt="Small Chops image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Small Chops</h3>
@@ -180,7 +189,7 @@
         </div>
         <div class="cake-cntent" data-item="chicken-barbeque" data-price="29999.99">
             <div class="cake-img">
-                <img src="image/chicken bbq.png" alt="Barbeque image">
+                <img src="image/chicken bbq.webp" alt="Barbeque image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Chicken Barbeque</h3>
@@ -207,7 +216,7 @@
         </div>
         <div class="cake-cntent" data-item="fish-barbeque" data-price="24999.99">
             <div class="cake-img">
-                <img src="image/fishbarbeque.png" alt="Barbeque image">
+                <img src="image/fishbarbeque.webp" alt="Barbeque image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Fish Barbeque</h3>
@@ -234,7 +243,7 @@
         </div>
         <div class="cake-cntent" data-item="chicken and chips" data-price="9999.99">
             <div class="cake-img">
-                <img src="image/chick-chips.png" alt="Chicken & Chips image">
+                <img src="image/chick-chips.webp" alt="Chicken & Chips image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Chicken and Chips</h3>
@@ -258,7 +267,7 @@
         </div>
         <div class="cake-cntent" data-item="pastries" data-price="9999.99">
             <div class="cake-img">
-                <img src="image/pastries.png" alt="pastries image">
+                <img src="image/pastries.webp" alt="pastries image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Pastries</h3>
@@ -282,7 +291,7 @@
         </div>
         <div class="cake-cntent" data-item="Cookies" data-price="2999.99">
             <div class="cake-img">
-                <img src="image/cookies (2).png" alt="Cookies image">
+                <img src="image/cookies (2).webp" alt="Cookies image" loading="lazy" class="lazy-img">
             </div>
             <div class="cake-desc">
                 <h3>Cookies</h3>
@@ -329,7 +338,7 @@
                 </div> 
 
                 <div class="about-img">
-                    <img src="image/khadejah.png" alt="About image">
+                    <img src="image/khadejah.webp" alt="About image" loading="lazy" class="lazy-img">
                 </div>
              </div>
         </div>
@@ -514,7 +523,7 @@
                 
                 <h3>khadijah CAKES</h3>
                 <div class="f-img">
-                    <img src="image/footer logo.png" alt="">
+                    <img src="image/footer logo.webp" alt="Footer logo" loading="lazy" class="lazy-img">
                 </div>
                 <p>Where sophisticated design meets  soulful flavor. We specialize in creating breathtaking centerpieces that taste even better than they look.</p>
                 
